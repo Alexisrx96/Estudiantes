@@ -1,0 +1,66 @@
+﻿@model Estudiantes.Models.Dto.Alumnos
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Alumnos</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.IdAlumno)
+        </dt>
+
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.IdAlumno)
+        </dd>
+
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.NombresAlumno)
+        </dt>
+
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.NombresAlumno)
+        </dd>
+
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.PrimerApellido)
+        </dt>
+
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.PrimerApellido)
+        </dd>
+
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.SegundoApellido)
+        </dt>
+
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.SegundoApellido)
+        </dd>
+
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.FechaNacimiento)
+        </dt>
+
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.FechaNacimiento)
+        </dd>
+
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.AnioIngreso)
+        </dt>
+
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.AnioIngreso)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdAlumno }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
